@@ -48,55 +48,45 @@ const sectionColors: Record<string, string> = {
     <div class="brand-accent h-1 fixed top-0 left-0 right-0 z-50"></div>
 
     <!-- Header -->
-    <header class="fixed top-1 left-0 right-0 z-40 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 h-16">
+    <header class="fixed top-1 left-0 right-0 z-40 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 h-14">
       <div class="flex items-center justify-between h-full px-4 lg:px-6">
-        <!-- Mobile menu button -->
-        <button
-          id="mobile-menu-btn"
-          class="lg:hidden p-2 rounded-md text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700"
-          aria-label="Toggle menu"
-        >
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-
-        <!-- Logo -->
-        <a href="/" class="flex items-center">
-          <img
-            src="/assets/images/fp_logo_revised.png"
-            alt="Field Promax"
-            class="h-10 w-auto dark:bg-white dark:rounded dark:px-2 dark:py-1"
-          />
-        </a>
-
-        <!-- Right side actions -->
-        <div class="flex items-center gap-2 sm:gap-4">
-          <!-- Dark mode toggle -->
+        <!-- Left side: Mobile menu + Logo + Title -->
+        <div class="flex items-center gap-3">
+          <!-- Mobile menu button -->
           <button
-            id="theme-toggle"
-            class="theme-toggle"
-            aria-label="Toggle dark mode"
+            id="mobile-menu-btn"
+            class="lg:hidden p-2 rounded-md text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700"
+            aria-label="Toggle menu"
           >
-            <!-- Sun icon (shown in dark mode) -->
-            <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-            </svg>
-            <!-- Moon icon (shown in light mode) -->
-            <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
 
-          <a
-            href="https://www.fieldpromax.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
-          >
-            Go to App
+          <!-- Logo -->
+          <a href="/" class="flex items-center gap-3">
+            <img
+              src="/assets/images/fp_logo_revised.png"
+              alt="Field Promax"
+              class="h-9 w-auto dark:bg-white dark:rounded dark:px-2 dark:py-1"
+            />
+            <span class="hidden sm:inline text-lg font-semibold text-gray-900 dark:text-white">Tutorials & Guides</span>
           </a>
         </div>
+
+        <!-- Dark mode toggle -->
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Toggle dark mode"
+        >
+          <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -106,7 +96,7 @@ const sectionColors: Record<string, string> = {
     <!-- Sidebar -->
     <aside
       id="sidebar"
-      class="fixed top-17 left-0 z-40 w-72 h-[calc(100vh-4.25rem)] bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 overflow-y-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-200"
+      class="fixed top-15 left-0 z-40 w-72 h-[calc(100vh-3.75rem)] bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 overflow-y-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-200"
     >
       <nav class="p-4 space-y-4">
         {navigation.map((navSection) => (
@@ -204,7 +194,7 @@ const sectionColors: Record<string, string> = {
     </aside>
 
     <!-- Main content -->
-    <main class="lg:ml-72 pt-17 min-h-screen">
+    <main class="lg:ml-72 pt-15 min-h-screen">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <!-- Breadcrumb -->
         {section && (
