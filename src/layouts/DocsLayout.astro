@@ -223,6 +223,57 @@ const sectionColors: Record<string, string> = {
           <slot />
         </article>
       </div>
+
+      <!-- Footer -->
+      <footer class="bg-gray-900 text-gray-300 mt-12">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <div class="grid gap-8 sm:grid-cols-2">
+            <!-- Contact Info -->
+            <div>
+              <h4 class="text-white font-semibold mb-3">Contact Us</h4>
+              <p class="mb-2 text-sm">
+                <span class="font-medium">E-mail:</span>
+                <a href="mailto:info@fieldpromax.com" class="hover:text-orange-400 transition-colors">info@fieldpromax.com</a>
+              </p>
+              <p class="text-sm">
+                <span class="font-medium">Phone:</span>
+                <a href="tel:+18882499201" class="hover:text-orange-400 transition-colors">+1 (888) 249-9201</a>
+              </p>
+            </div>
+
+            <!-- App Links -->
+            <div>
+              <h4 class="text-white font-semibold mb-3">Get the App</h4>
+              <div class="flex gap-3">
+                <a href="https://play.google.com/store/apps/details?id=com.fieldpromax.fieldpromaxplus" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/images/googleplay.svg" alt="Get it on Google Play" class="h-9" />
+                </a>
+                <a href="https://apps.apple.com/in/app/field-promax-plus/id6446847200" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/images/Appstore.svg" alt="Download on the App Store" class="h-9" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Bar -->
+          <div class="border-t border-gray-800 mt-6 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p class="text-xs text-gray-500">
+              &copy; 2023 Field Promax LLC
+            </p>
+            <nav class="flex flex-wrap justify-center gap-4 text-xs">
+              <a href="https://www.fieldpromax.com/term-and-condition/" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400 transition-colors">
+                Terms and Conditions
+              </a>
+              <a href="https://www.fieldpromax.com/privacy-policy-2/" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400 transition-colors">
+                Privacy Policy
+              </a>
+              <a href="https://www.fieldpromax.com/disclaimer/" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400 transition-colors">
+                Disclaimer
+              </a>
+            </nav>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <!-- Scripts -->
