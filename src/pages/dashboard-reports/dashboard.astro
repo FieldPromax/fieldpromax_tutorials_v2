@@ -1,0 +1,70 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout title="Dashboard" section="Dashboard & Reports">
+  <h2>Overview</h2>
+  <p>
+    The <strong>Live Dashboard</strong> gives you a bird's eye view of your operations.
+    Monitor key performance indicators and stay updated on work orders, operational metrics,
+    and user activities in real-time.
+  </p>
+  <p>
+    Dashboards bring all important information into one place, making it easy to track and act.
+    This helps boost productivity, improve customer satisfaction, and increase profitability.
+  </p>
+
+  <h2>How to Access</h2>
+  <p>The <strong>Home</strong> page is your dashboard — it's the default landing page.</p>
+
+  <h2>Dashboard Sections</h2>
+
+  <h3>Work Orders</h3>
+  <img src="/images/dashboard-reports/dashboard_02.webp" alt="Work Orders Dashboard" />
+  <ul>
+    <li><strong>Today's:</strong> Work orders dispatched for the current day</li>
+    <li><strong>Unassigned:</strong> Work orders not yet assigned to any technician</li>
+    <li><strong>Recurrence:</strong> Recurring work orders that repeat on a schedule</li>
+    <li><strong>Outdated:</strong> Past work orders where the technician hasn't filled in time or marked complete</li>
+    <li><strong>All Open:</strong> Comprehensive view of all pending work orders</li>
+    <li><strong>Completed:</strong> Work orders marked complete, ready for invoicing</li>
+  </ul>
+
+  <h3>Operational Metrics</h3>
+  <img src="/images/dashboard-reports/dashboard_01.webp" alt="Operational Metrics" />
+  <ul>
+    <li><strong>Schedules:</strong> Summary of "In Progress" and "Completed" visits. Identifies discrepancies between Actual and Scheduled Hours</li>
+    <li><strong>Estimates:</strong> Quick view of "Approved" and "Pending" estimate totals</li>
+    <li><strong>Closed Orders:</strong> Trend graph of closed work orders for the past 24 months</li>
+    <li><strong>Days Off:</strong> View upcoming days off and add new ones</li>
+    <li><strong>Service Provider Status:</strong> Real-time technician status with 15-day history</li>
+    <li><strong>Service Requests:</strong> Customer requests submitted through your website</li>
+  </ul>
+
+  <h3>User Activities</h3>
+  <img src="/images/dashboard-reports/dashboard_03.webp" alt="User Activities" />
+  <p>
+    Monitor technician activities throughout the day. As tasks are completed, notifications
+    appear in the User Activities list. Click an activity to open the related work order,
+    or click the map icon to view the location where the task was performed.
+  </p>
+
+  <h2>Notifications & Permissions</h2>
+  <ul>
+    <li>The dashboard <strong>automatically updates</strong> as work orders change status</li>
+    <li>Only <strong>Administrators</strong> have access to the dashboard</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <div class="callout callout-tip">
+    <p>
+      <strong>Monitor the dashboard continuously</strong> to catch important updates and act quickly.
+    </p>
+    <p>
+      <strong>Use the tiles</strong> to navigate directly to tasks that need attention.
+    </p>
+    <p>
+      <strong>Check the Outdated section</strong> daily to ensure no work orders fall through the cracks.
+    </p>
+  </div>
+</DocsLayout>

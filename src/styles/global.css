@@ -1,0 +1,255 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Custom theme colors - Field Promax brand */
+@theme {
+  --color-primary: #1e40af;
+  --color-primary-light: #3b82f6;
+  --color-primary-dark: #1e3a8a;
+  --color-accent: #0ea5e9;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900 antialiased;
+}
+
+/* Dark mode body */
+.dark body,
+body.dark {
+  @apply bg-gray-900 text-gray-100;
+}
+
+/* Sidebar link styles - indented under section headers */
+.sidebar-link {
+  @apply flex items-center gap-2 px-3 py-1.5 ml-11 text-sm text-gray-600 rounded-md transition-colors duration-150 border-l-2 border-transparent;
+}
+
+.sidebar-link:hover {
+  @apply bg-gray-100 text-gray-900 border-l-2 border-blue-300;
+}
+
+.sidebar-link.active {
+  @apply bg-blue-50 text-blue-700 font-medium border-l-2 border-blue-600;
+}
+
+/* Dark mode sidebar links */
+.dark .sidebar-link {
+  @apply text-gray-400;
+}
+
+.dark .sidebar-link:hover {
+  @apply bg-gray-800 text-gray-100 border-blue-400;
+}
+
+.dark .sidebar-link.active {
+  @apply bg-blue-900/30 text-blue-400 border-blue-500;
+}
+
+/* Section header in sidebar */
+.sidebar-section {
+  @apply flex items-center gap-3 font-semibold text-gray-900 px-3 py-2 text-sm tracking-wide;
+}
+
+.dark .sidebar-section {
+  @apply text-gray-100;
+}
+
+/* Section icon styles */
+.section-icon {
+  @apply w-5 h-5 flex-shrink-0;
+}
+
+/* Content prose overrides for better readability */
+.prose {
+  @apply max-w-none;
+}
+
+.prose h2 {
+  @apply text-2xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-200;
+}
+
+.prose h3 {
+  @apply text-xl font-semibold text-gray-800 mt-6 mb-3;
+}
+
+.prose h4 {
+  @apply text-lg font-medium text-gray-700 mt-4 mb-2;
+}
+
+.prose p {
+  @apply text-gray-600 leading-relaxed mb-4;
+}
+
+.prose ul, .prose ol {
+  @apply my-4 space-y-2;
+}
+
+.prose li {
+  @apply text-gray-600;
+}
+
+.prose img {
+  @apply rounded-lg shadow-md my-6 max-w-full h-auto;
+}
+
+.prose strong {
+  @apply text-gray-900 font-semibold;
+}
+
+.prose a {
+  @apply text-blue-600 hover:text-blue-800 underline;
+}
+
+/* Dark mode prose */
+.dark .prose h2 {
+  @apply text-gray-100 border-gray-700;
+}
+
+.dark .prose h3 {
+  @apply text-gray-200;
+}
+
+.dark .prose h4 {
+  @apply text-gray-300;
+}
+
+.dark .prose p,
+.dark .prose li {
+  @apply text-gray-400;
+}
+
+.dark .prose strong {
+  @apply text-gray-100;
+}
+
+.dark .prose a {
+  @apply text-blue-400 hover:text-blue-300;
+}
+
+.dark .prose img {
+  @apply shadow-lg shadow-black/30;
+}
+
+/* Callout/tip boxes */
+.callout {
+  @apply p-4 rounded-lg my-6 border-l-4;
+}
+
+.callout-info {
+  @apply bg-blue-50 border-blue-500 text-blue-800;
+}
+
+.callout-tip {
+  @apply bg-green-50 border-green-500 text-green-800;
+}
+
+.callout-warning {
+  @apply bg-yellow-50 border-yellow-500 text-yellow-800;
+}
+
+/* Dark mode callouts */
+.dark .callout-info {
+  @apply bg-blue-900/30 border-blue-400 text-blue-300;
+}
+
+.dark .callout-tip {
+  @apply bg-green-900/30 border-green-400 text-green-300;
+}
+
+.dark .callout-warning {
+  @apply bg-yellow-900/30 border-yellow-400 text-yellow-300;
+}
+
+/* Step indicators */
+.step {
+  @apply flex items-start gap-4 my-4;
+}
+
+.step-number {
+  @apply flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm;
+}
+
+.step-content {
+  @apply flex-1;
+}
+
+/* Dark mode backgrounds */
+.dark .bg-white {
+  @apply bg-gray-800;
+}
+
+.dark .bg-gray-50 {
+  @apply bg-gray-900;
+}
+
+.dark .bg-gray-100 {
+  @apply bg-gray-700;
+}
+
+.dark .border-gray-200 {
+  @apply border-gray-700;
+}
+
+.dark .text-gray-900 {
+  @apply text-gray-100;
+}
+
+.dark .text-gray-700 {
+  @apply text-gray-300;
+}
+
+.dark .text-gray-600 {
+  @apply text-gray-400;
+}
+
+.dark .text-gray-500 {
+  @apply text-gray-500;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  @apply p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors;
+}
+
+.dark .theme-toggle {
+  @apply text-gray-400 hover:bg-gray-700;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
+
+.dark ::-webkit-scrollbar-track {
+  @apply bg-gray-800;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-gray-600;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+/* Brand accent line */
+.brand-accent {
+  @apply bg-gradient-to-r from-blue-600 to-sky-500;
+}

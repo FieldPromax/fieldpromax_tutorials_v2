@@ -1,0 +1,88 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout title="Payments" section="Invoice & Payments">
+  <h2>Overview</h2>
+  <p>
+    Record and collect payments in Field Promax using both the web and mobile applications.
+    Integrate with payment gateways like Stripe or Intuit GoPayment for seamless payment collection.
+  </p>
+  <p>
+    Recording payments has never been easier. Whether you're using the web or mobile app,
+    quickly enter payment details and integrate with your preferred payment gateway for
+    accurate bookkeeping.
+  </p>
+
+  <h2>How to Access</h2>
+  <ul>
+    <li>From the left panel, select <strong>Work Orders</strong> and click <strong>Get Paid</strong></li>
+    <li>View payment details in the <strong>Payments</strong> tab within any work order</li>
+    <li>From the left panel, select <strong>Payments</strong> to view all payment records</li>
+  </ul>
+
+  <h2>Recording Payments</h2>
+
+  <h3>Web Application</h3>
+  <img src="/images/invoice-payments/payments_01.webp" alt="Record Payment Web" />
+  <ol>
+    <li>Open the work order</li>
+    <li>Navigate to the <strong>Payments</strong> section</li>
+    <li>Enter payment details: amount, payment method, and any notes</li>
+    <li>Save the payment record</li>
+  </ol>
+
+  <h3>Mobile App</h3>
+  <img src="/images/invoice-payments/payments_02.jpg" alt="Record Payment Mobile" />
+  <ol>
+    <li>Open the work order in the Field Promax Plus mobile app</li>
+    <li>Navigate to the <strong>Payments</strong> section</li>
+    <li>Enter the payment information</li>
+    <li>Save to record the payment</li>
+  </ol>
+
+  <h2>Payment Gateway Integration</h2>
+
+  <h3>Stripe</h3>
+  <ul>
+    <li>Go to <strong>Settings</strong> → <strong>Stripe Integration</strong></li>
+    <li>Connect your Stripe account</li>
+    <li>Collect payments directly through the app</li>
+    <li>Payments are recorded automatically when processed</li>
+  </ul>
+
+  <h3>Intuit GoPayment</h3>
+  <ul>
+    <li>Use your existing Intuit GoPayment account</li>
+    <li>Process payments and record them in Field Promax</li>
+  </ul>
+
+  <h2>Important Notes</h2>
+  <div class="callout callout-warning">
+    <p>
+      <strong>Payments do not automatically transfer to QuickBooks.</strong>
+      Administrators should verify payment statuses in both Field Promax and QuickBooks
+      to ensure accurate records.
+    </p>
+  </div>
+
+  <h2>Notifications & Permissions</h2>
+  <ul>
+    <li>Payment records are visible to administrators</li>
+    <li>Technicians can record payments via the mobile app</li>
+    <li>Payment history is maintained for each work order</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <div class="callout callout-tip">
+    <p>
+      <strong>Use your own payment gateway</strong> like Stripe or Intuit GoPayment for seamless payment collection.
+    </p>
+    <p>
+      <strong>Integrate with Stripe</strong> from Settings → Stripe Integration for the best experience.
+    </p>
+    <p>
+      <strong>Verify payments</strong> in both Field Promax and QuickBooks to maintain accurate records.
+    </p>
+  </div>
+</DocsLayout>

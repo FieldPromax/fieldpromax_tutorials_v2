@@ -1,0 +1,94 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout title="Smart Dispatch" section="Dispatch">
+  <h2>Overview</h2>
+  <p>
+    Field Promax offers smart scheduling tools to optimize your operations. The <strong>Calendar & Map View</strong>
+    helps reduce travel time by clustering work orders on a map, while the <strong>Job Status View</strong>
+    provides real-time updates on technician progress.
+  </p>
+  <p>
+    These features reduce travel time and miles driven, saving costs. The Job Status View is your
+    "eye in the sky," giving you real-time visibility into where every job stands.
+  </p>
+
+  <h2>How to Access</h2>
+  <ul>
+    <li>From the left panel, select <strong>Scheduling and Dispatching</strong></li>
+    <li>Choose <strong>Map and Calendar</strong> or <strong>Job Status</strong> view</li>
+  </ul>
+
+  <h2>Calendar & Map View</h2>
+  <img src="/images/dispatch/smartscheduling_01.gif" alt="Calendar and Map View" />
+
+  <h3>Smart Dispatch</h3>
+  <p>
+    Reduce travel time and optimize routes by clustering work orders on the map.
+    See where technicians are in relation to pending jobs.
+  </p>
+
+  <h3>Map Features</h3>
+  <ul>
+    <li><strong>Work Order Locations:</strong> Open work orders displayed on the map</li>
+    <li><strong>Technician Locations:</strong> Marked by truck icons showing live positions</li>
+    <li><strong>GPS Updates:</strong> Technician locations update every 8-10 minutes when tracking is enabled</li>
+  </ul>
+
+  <h2>Live Job Status View</h2>
+  <img src="/images/dispatch/smartscheduling_02.webp" alt="Job Status View" />
+
+  <h3>Real-Time Calendar</h3>
+  <p>View work orders based on their current status with color-coded indicators:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Status</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Assigned</strong></td>
+        <td>Work order appears grey when assigned to a technician</td>
+      </tr>
+      <tr>
+        <td><strong>Accepted</strong></td>
+        <td>Changes color when the technician accepts the job</td>
+      </tr>
+      <tr>
+        <td><strong>In Route</strong></td>
+        <td>Updates when the technician is traveling to the job site</td>
+      </tr>
+      <tr>
+        <td><strong>Checked In</strong></td>
+        <td>Shows when the technician has arrived and checked in</td>
+      </tr>
+      <tr>
+        <td><strong>Completed</strong></td>
+        <td>Marked when the job is finished</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Notifications & Permissions</h2>
+  <ul>
+    <li><strong>Technicians</strong> must enable location tracking in the mobile app for their positions to appear on the map</li>
+    <li>Status updates are reflected in real-time as technicians update work orders in the app</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <div class="callout callout-tip">
+    <p>
+      <strong>Use the Job Status View</strong> to get real-time visibility into technician progress.
+    </p>
+    <p>
+      <strong>Optimize routes</strong> using the Calendar & Map View to reduce driving time.
+    </p>
+    <p>
+      <strong>Ensure location tracking is enabled</strong> for all technicians to get accurate positioning.
+    </p>
+  </div>
+</DocsLayout>

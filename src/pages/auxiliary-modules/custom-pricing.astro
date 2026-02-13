@@ -1,0 +1,72 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout title="Custom Pricing" section="Auxiliary Modules">
+  <h2>Overview</h2>
+  <p>
+    Set product and item pricing specific to individual customers using the Custom Pricing module.
+    This feature allows you to offer customized pricing for different products.
+  </p>
+  <p>
+    Managing different pricing for different customers can be a headache when done manually.
+    Field Promax automates this process, ensuring custom pricing is applied accurately every time.
+  </p>
+
+  <h2>How to Access</h2>
+  <ul>
+    <li>Go to <strong>Settings</strong> → <strong>Manage Lists</strong> → <strong>Custom Price Tab</strong></li>
+  </ul>
+
+  <h2>Setting Up Custom Pricing</h2>
+
+  <h3>Step 1: Create Price Level</h3>
+  <img src="/images/auxiliary-modules/auxillarymodules_01.webp" alt="Price Level Settings" />
+  <ol>
+    <li>Go to <strong>Settings</strong> → <strong>Manage Lists</strong> → <strong>Custom Price Tab</strong></li>
+    <li>Create a <strong>Price Level Name</strong> (e.g., "VIP Customers," "Wholesale")</li>
+  </ol>
+
+  <h3>Step 2: Link to Customers</h3>
+  <p>
+    Associate the Price Level Name with specific customers who should receive this pricing.
+  </p>
+
+  <h3>Step 3: Link Products</h3>
+  <p>
+    Link products to the Price Level Name to define custom prices for each item.
+  </p>
+
+  <h2>How It Works</h2>
+  <p>
+    When a product is added to a work order, it automatically applies the custom price
+    based on the price level assigned to that customer.
+  </p>
+
+  <h3>Example</h3>
+  <ol>
+    <li>Create a "Preferred Customer" price level</li>
+    <li>Set 10% discount on labor for this level</li>
+    <li>Assign "Preferred Customer" level to specific customers</li>
+    <li>When creating work orders, discounted pricing applies automatically</li>
+  </ol>
+
+  <h2>Notifications & Permissions</h2>
+  <ul>
+    <li>Only <strong>Administrators</strong> or users with appropriate permissions can modify price levels</li>
+    <li>Price levels apply automatically — no manual intervention needed</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <div class="callout callout-tip">
+    <p>
+      <strong>Review price levels regularly</strong> to ensure pricing remains current.
+    </p>
+    <p>
+      <strong>Assign price levels to key customers</strong> for consistent pricing.
+    </p>
+    <p>
+      <strong>Use descriptive names</strong> for price levels to easily identify their purpose.
+    </p>
+  </div>
+</DocsLayout>

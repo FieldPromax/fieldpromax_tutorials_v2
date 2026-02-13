@@ -1,0 +1,93 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout title="GPS Tracking" section="Dispatch">
+  <h2>Overview</h2>
+  <p>
+    GPS tracking in Field Promax helps you monitor technician locations in real-time.
+    This enables optimized route planning and better service management.
+  </p>
+  <p>
+    Field Promax receives location data from technicians' mobile devices when they perform
+    actions like clock in/out, check in/out, or complete work. This approach ensures
+    accurate tracking while respecting privacy.
+  </p>
+
+  <h2>How to Access</h2>
+  <ul>
+    <li>From the left panel, go to <strong>Scheduling and Dispatching</strong> → <strong>Map</strong></li>
+  </ul>
+
+  <h2>GPS Tracking Features</h2>
+
+  <h3>Enable Tracking</h3>
+  <ul>
+    <li>Ensure tracking is enabled in the Field Promax mobile app for your technicians</li>
+    <li>Location permissions must be granted on the mobile device</li>
+  </ul>
+
+  <h3>When Coordinates Are Captured</h3>
+  <p>GPS coordinates are received when technicians perform these actions:</p>
+  <ul>
+    <li><strong>Clock In / Clock Out:</strong> Start and end of workday</li>
+    <li><strong>Check In / Check Out:</strong> Arrival and departure from job sites</li>
+    <li><strong>Work Complete:</strong> When finishing a job</li>
+  </ul>
+
+  <h3>Location Display</h3>
+  <p>
+    Technician locations appear throughout Field Promax. Click the location icon
+    to open a detailed location window.
+  </p>
+
+  <h2>Map View</h2>
+  <img src="/images/dispatch/gpstracking_01.webp" alt="GPS Map View" />
+
+  <h3>Map Integration</h3>
+  <ul>
+    <li>Combines open work orders with live technician locations</li>
+    <li>Visualize proximity to assess scheduling and optimize routing</li>
+  </ul>
+
+  <h3>Technician Icons</h3>
+  <ul>
+    <li>Technician locations are shown as <strong>truck icons</strong> on the map</li>
+    <li>Ensure technicians enable location tracking in the mobile app for accurate updates</li>
+  </ul>
+
+  <h3>Filtering</h3>
+  <p>Filter the map display by:</p>
+  <ul>
+    <li><strong>Date:</strong> Show work orders for specific dates</li>
+    <li><strong>Technician:</strong> Focus on specific service providers</li>
+  </ul>
+
+  <h2>Privacy Considerations</h2>
+  <div class="callout callout-info">
+    <p>
+      Google and Apple only provide location data during specific user actions (clock in/out, check in/out, work complete)
+      due to privacy policies. This means continuous real-time tracking is not available, but location
+      snapshots are captured at key workflow moments.
+    </p>
+  </div>
+
+  <h2>Notifications & Permissions</h2>
+  <ul>
+    <li><strong>Technicians</strong> must enable location tracking in the mobile app for visibility</li>
+    <li><strong>Administrators</strong> can view all technician locations on the map</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <div class="callout callout-tip">
+    <p>
+      <strong>Enable GPS tracking</strong> on all technician devices for accurate location updates.
+    </p>
+    <p>
+      <strong>Monitor technician locations</strong> in the map view to optimize scheduling and routes.
+    </p>
+    <p>
+      <strong>Use filtering</strong> to narrow down work orders by technician and date for better management.
+    </p>
+  </div>
+</DocsLayout>

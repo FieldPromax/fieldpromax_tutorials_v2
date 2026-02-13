@@ -1,0 +1,67 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout title="Customer Portal" section="CRM">
+  <h2>Overview</h2>
+  <p>
+    The Customer Portal gives your customers limited access to Field Promax so they can view
+    and interact with work orders relevant to their company. This feature keeps your best
+    customers engaged with transparency and control.
+  </p>
+
+  <h2>How to Access</h2>
+
+  <h3>Enable the Module</h3>
+  <ul>
+    <li>Go to <strong>Settings</strong> → <strong>Company</strong> → <strong>Application Features Settings</strong> → <strong>External User Settings</strong></li>
+  </ul>
+
+  <h3>Create Customer Access</h3>
+  <img src="/images/crm/crm_01.png" alt="Create External User" />
+  <ol>
+    <li>Go to <strong>Settings</strong> → <strong>Manage Users</strong> → <strong>Create User</strong></li>
+    <li>Select <strong>External User</strong> from the Security Level dropdown</li>
+    <li>Create the user — they'll receive login credentials via email</li>
+  </ol>
+  <p><em>Note: External users count towards your total user limit.</em></p>
+
+  <h2>Customer Portal Features</h2>
+  <img src="/images/crm/crm_02.png" alt="Customer Portal View" />
+  <img src="/images/crm/crm_03.webp" alt="Customer Portal Features" />
+
+  <h3>Limited Access</h3>
+  <p>Customers can only view work orders belonging to their company. Key limitations include:</p>
+  <ul>
+    <li>Cannot see the invoice section of work orders</li>
+    <li>Can create work orders (if enabled)</li>
+    <li>View is restricted to their company's data only</li>
+  </ul>
+
+  <h3>Configurable Options</h3>
+  <p>Choose what customers can see:</p>
+  <ul>
+    <li><strong>Show Schedules:</strong> Display appointment times</li>
+    <li><strong>Show Images:</strong> Display job photos</li>
+    <li><strong>Show Documents:</strong> Display attached documents</li>
+    <li><strong>Show Closed Work Orders:</strong> Display completed jobs</li>
+    <li><strong>Show Work Order Resolution:</strong> Display resolution notes</li>
+  </ul>
+
+  <h2>Notifications & Permissions</h2>
+  <ul>
+    <li>External users have <strong>limited permissions</strong> to keep sensitive information secure</li>
+    <li>You receive notifications when customers create work orders for themselves</li>
+    <li>Only administrators can configure external user settings</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <div class="callout callout-tip">
+    <p>
+      <strong>Offer the Customer Portal</strong> to key accounts who want constant visibility into their work orders.
+    </p>
+    <p>
+      <strong>Review settings carefully</strong> to ensure customers see only what you want them to see.
+    </p>
+  </div>
+</DocsLayout>

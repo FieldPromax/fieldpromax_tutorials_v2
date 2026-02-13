@@ -1,0 +1,48 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout title="Common Issues" section="Helpful Resources">
+  <h2>Overview</h2>
+  <p>
+    This guide addresses common issues users encounter with Field Promax and provides
+    solutions to resolve them quickly.
+  </p>
+
+  <h2>QuickBooks Invoice Numbers Not Generating</h2>
+  <p>
+    This issue may occur during the <strong>Send to QuickBooks</strong> operation when
+    QuickBooks Online doesn't generate an invoice number.
+  </p>
+
+  <h3>Solution</h3>
+  <ol>
+    <li>Log in to <strong>QuickBooks Online</strong></li>
+    <li>Navigate to <strong>Company Settings</strong> (or Account Settings)</li>
+    <li>Go to the <strong>Sales</strong> section</li>
+    <li>Find <strong>Custom Transaction Numbers</strong></li>
+    <li>Switch it <strong>Off</strong></li>
+  </ol>
+
+  <h3>Why This Works</h3>
+  <p>
+    When Custom Transaction Numbers is enabled in QuickBooks, it expects you to provide
+    invoice numbers manually. Turning it off allows QuickBooks to auto-generate numbers,
+    which works seamlessly with Field Promax.
+  </p>
+
+  <h2>Additional Notes</h2>
+  <ul>
+    <li>Work order numbers from Field Promax are displayed in the <strong>memo field</strong> of invoices generated in QuickBooks</li>
+    <li>Only <strong>QuickBooks Administrators</strong> can modify these settings</li>
+  </ul>
+
+  <h2>Need More Help?</h2>
+  <p>
+    If you're experiencing issues not covered here, contact Field Promax support:
+  </p>
+  <ul>
+    <li><strong>Email:</strong> info@fieldpromax.com</li>
+    <li><strong>Phone:</strong> 888-249-9201</li>
+  </ul>
+</DocsLayout>

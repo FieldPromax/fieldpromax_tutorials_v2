@@ -1,0 +1,106 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout title="Dispatch Overview" section="Dispatch">
+  <h2>Overview</h2>
+  <p>
+    Dispatching is the backbone of efficient service operations, ensuring the right resources
+    are in the right place at the right time. Field Promax offers multiple calendar views
+    to manage work orders effectively.
+  </p>
+  <p>
+    Whether it's Day, Week, Work Week, or Month view, you can quickly adapt to the format
+    that suits your needs. With drag-and-drop functionality, filters, and color-coded schedules,
+    managing assignments has never been easier.
+  </p>
+
+  <h2>How to Access</h2>
+  <ul>
+    <li>From the left panel, select <strong>Dispatch</strong> and choose any calendar view</li>
+    <li>To customize calendar settings: <strong>Settings</strong> → <strong>Company</strong> → <strong>Calendar Settings</strong></li>
+  </ul>
+
+  <h2>Calendar Features</h2>
+
+  <h3>Create Work Orders</h3>
+  <p>Double-click anywhere on the calendar to quickly create a new work order.</p>
+
+  <h3>Schedules (Visits)</h3>
+  <img src="/images/dispatch/schedulingoverview_01.webp" alt="Schedules on Calendar" />
+  <p>
+    Each schedule represents a visit. Schedules are color-coded by technician.
+    A work order may appear multiple times if it has multiple schedules.
+  </p>
+
+  <h3>Calendar Views</h3>
+  <img src="/images/dispatch/schedulingoverview_02.webp" alt="Calendar Views" />
+  <p>Switch between views to display work orders in your preferred format:</p>
+  <ul>
+    <li><strong>Day View:</strong> Detailed hourly breakdown</li>
+    <li><strong>Week View:</strong> Full 7-day overview</li>
+    <li><strong>Work Week View:</strong> Monday through Friday</li>
+    <li><strong>Month View:</strong> High-level monthly overview</li>
+  </ul>
+
+  <h3>Filters</h3>
+  <img src="/images/dispatch/schedulingoverview_03.webp" alt="Calendar Filters" />
+  <p>
+    Use the orange filter button to adjust which work orders you see.
+    Filter by technician, work group, and more. Expand the left panel for filter options.
+  </p>
+
+  <h3>Drag and Drop</h3>
+  <p>
+    Drag and drop schedules to easily reassign them to a different technician
+    or change the date and time.
+  </p>
+
+  <h3>Status Indicators</h3>
+  <img src="/images/dispatch/schedulingoverview_04.webp" alt="Completed Schedules" />
+  <img src="/images/dispatch/schedulingoverview_05.webp" alt="Closed Orders" />
+  <ul>
+    <li><strong>Completed Schedules:</strong> Marked with a checkbox</li>
+    <li><strong>Closed Orders:</strong> Marked with a checkbox and strikethrough</li>
+  </ul>
+
+  <h3>Days Off</h3>
+  <img src="/images/dispatch/schedulingoverview_06.webp" alt="Days Off" />
+  <p>
+    Technician days off are displayed on the calendar to prevent accidental scheduling
+    during unavailable times.
+  </p>
+
+  <h3>Unassigned Work Orders</h3>
+  <img src="/images/dispatch/schedulingoverview_07.webp" alt="Unassigned Work Orders" />
+  <p>
+    Unassigned work orders appear in the left panel. Drag and drop them to assign
+    to a technician.
+  </p>
+
+  <h3>Calendar Customization</h3>
+  <img src="/images/dispatch/schedulingoverview_08.webp" alt="Calendar Settings" />
+  <p>
+    Go to <strong>Settings</strong> → <strong>Company</strong> → <strong>Calendar Settings</strong>
+    to configure business hours and other preferences.
+  </p>
+
+  <h2>Notifications & Permissions</h2>
+  <ul>
+    <li><strong>Technicians</strong> receive text messages when work orders are assigned</li>
+    <li><strong>Administrators</strong> have full access to all calendar features and settings</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <div class="callout callout-tip">
+    <p>
+      <strong>Customize your calendar settings</strong> to match your business hours and technician availability.
+    </p>
+    <p>
+      <strong>Use filters</strong> to focus on specific technicians or work groups.
+    </p>
+    <p>
+      <strong>Monitor completed and closed orders</strong> to ensure timely invoicing and follow-up.
+    </p>
+  </div>
+</DocsLayout>

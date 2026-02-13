@@ -1,0 +1,85 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout title="Overview & Setup" section="Timekeeping">
+  <h2>Overview</h2>
+  <p>
+    The Timekeeping module helps you pay technicians accurately and on time.
+    It integrates seamlessly with work orders, providing clear visibility into
+    technician utilization.
+  </p>
+  <p>
+    By comparing hours paid to technicians with hours billed to customers,
+    you can optimize operations — increasing billable hours or reducing payroll
+    costs to boost profitability.
+  </p>
+
+  <h2>How to Access</h2>
+  <ul>
+    <li>Go to <strong>Setup</strong> → <strong>Manage Timecard</strong> from the left panel</li>
+    <li>Activate the timecard for each service provider</li>
+    <li>Set up job codes to track the type of work performed</li>
+  </ul>
+
+  <h2>Timecard Process</h2>
+  <img src="/images/timekeeping/overviewandsetup_01.webp" alt="Timecard Process" />
+
+  <h3>Daily Workflow</h3>
+  <ol>
+    <li><strong>Start of Day:</strong> Service provider opens their timecard and clicks <strong>Clock In</strong></li>
+    <li><strong>At Job Sites:</strong> <strong>Check In</strong> and <strong>Check Out</strong> of each work order — this time is automatically pushed to the timecard</li>
+    <li><strong>End of Day:</strong> Service provider clicks <strong>Clock Out</strong> to end their day</li>
+  </ol>
+
+  <h2>Key Definitions</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Action</th>
+        <th>Location</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Clock In / Clock Out</strong></td>
+        <td>Timecard</td>
+        <td>Track payable hours for the technician</td>
+      </tr>
+      <tr>
+        <td><strong>Check In / Check Out</strong></td>
+        <td>Work Order</td>
+        <td>Track billable hours for the customer</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Settings</h2>
+
+  <h3>Allow Modify Clock In/Out</h3>
+  <img src="/images/timekeeping/overviewandsetup_02.png" alt="Modify Clock Settings" />
+  <p>This setting allows service providers to edit their clock in and clock out times.</p>
+
+  <h3>Push to Timecard</h3>
+  <p>
+    This setting manually pushes Check In and Check Out times from work orders
+    to the timecard.
+  </p>
+
+  <h2>Notifications & Permissions</h2>
+  <ul>
+    <li>Settings can be configured at the <strong>service provider level</strong> for different rights per technician</li>
+    <li>Administrators can view and edit all timecards</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <div class="callout callout-tip">
+    <p>
+      <strong>Ensure technicians clock in and out</strong> at the start and end of each day for accurate pay.
+    </p>
+    <p>
+      <strong>Review job codes</strong> to ensure time is categorized correctly.
+    </p>
+  </div>
+</DocsLayout>

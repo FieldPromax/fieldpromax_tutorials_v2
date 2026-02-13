@@ -1,0 +1,89 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout title="Convert to Work Order" section="Estimates">
+  <h2>Overview</h2>
+  <p>
+    Once an estimate is approved, convert it into a work order with a single click.
+    This process eliminates errors, streamlines workflows, and ensures a smooth transition
+    from estimate to job execution.
+  </p>
+
+  <h2>How to Access</h2>
+  <ul>
+    <li>Open the approved estimate</li>
+    <li>Click the <strong>Actions</strong> button</li>
+  </ul>
+
+  <h2>Converting an Estimate</h2>
+  <img src="/images/estimates/converttoworkorder_01.png" alt="Convert to Work Order" />
+
+  <h3>Steps</h3>
+  <ol>
+    <li>Once approved, the estimate status changes to <strong>Approved</strong></li>
+    <li>From the <strong>Actions</strong> button, select <strong>Convert to Work Order</strong></li>
+    <li>The estimate moves to the <strong>Closed Estimates</strong> tab</li>
+    <li>A new work order is created in <strong>Open Work Orders</strong></li>
+  </ol>
+
+  <h3>What Happens</h3>
+  <ul>
+    <li>The work order <strong>number matches</strong> the estimate number for easy reference</li>
+    <li>All products and pricing transfer automatically</li>
+    <li>Customer information is carried over</li>
+    <li>The work order is ready for scheduling and dispatch</li>
+  </ul>
+
+  <h2>Estimate Lifecycle</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Stage</th>
+        <th>Status</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Created</td>
+        <td>Draft / Pending</td>
+        <td>Open Estimates</td>
+      </tr>
+      <tr>
+        <td>Sent to Customer</td>
+        <td>Pending Approval</td>
+        <td>Open Estimates</td>
+      </tr>
+      <tr>
+        <td>Customer Approves</td>
+        <td>Approved</td>
+        <td>Open Estimates</td>
+      </tr>
+      <tr>
+        <td>Converted</td>
+        <td>Closed</td>
+        <td>Closed Estimates</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Notifications & Permissions</h2>
+  <ul>
+    <li>You receive an <strong>email notification</strong> when an estimate is approved</li>
+    <li>The work order can be immediately scheduled after conversion</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <div class="callout callout-tip">
+    <p>
+      <strong>Use Copy Estimate</strong> to save time when creating similar estimates for other customers.
+    </p>
+    <p>
+      <strong>Review before converting</strong> to ensure all details are correct.
+    </p>
+    <p>
+      <strong>Schedule promptly</strong> after conversion to maintain customer satisfaction.
+    </p>
+  </div>
+</DocsLayout>

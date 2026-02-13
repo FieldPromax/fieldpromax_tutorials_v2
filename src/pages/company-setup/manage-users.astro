@@ -1,0 +1,81 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout title="Manage Users" section="Company Setup">
+  <h2>Overview</h2>
+  <p>
+    Learn how to add and manage users in Field Promax. This guide covers creating users,
+    assigning security levels, setting up work groups, and configuring pay rates and QuickBooks item assignments.
+  </p>
+  <p>
+    Proper user management ensures each technician has appropriate access, accurate pay rates,
+    and correct settings — leading to smoother workflows and more accurate invoicing.
+  </p>
+
+  <h2>How to Access</h2>
+  <ul>
+    <li>From the left panel, go to <strong>Settings</strong> → <strong>Manage Users</strong> → <strong>Create User</strong></li>
+  </ul>
+
+  <h2>Creating a User</h2>
+  <img src="/images/company-setup/manageuser_01.png" alt="Create User Screen" />
+
+  <h3>Security Level</h3>
+  <p>
+    Select <strong>Service Provider</strong> for your technicians. This gives them access only to
+    work orders assigned to them.
+  </p>
+
+  <h3>QuickBooks Item Assignment</h3>
+  <p>
+    Type the first few letters of a product or item from your QuickBooks and select from the list
+    (typically "Labor"). This links labor time to the correct line item when generating invoices.
+  </p>
+
+  <h3>Phone Number</h3>
+  <p>
+    Enter the technician's phone number for work order notifications and reminders via text message.
+  </p>
+
+  <h2>User Settings</h2>
+  <img src="/images/company-setup/manageusers_02.jpg" alt="User Settings" />
+
+  <h3>Default Pay Rate</h3>
+  <p>
+    Set the default pay rate used to calculate labor amounts in invoices.
+  </p>
+
+  <h3>Work Groups</h3>
+  <p>
+    Assign service providers to work groups to filter and view specific groups in the Calendar.
+  </p>
+
+  <h3>Technician Color Assignment</h3>
+  <p>
+    Assign a unique color to each technician for easy visual identification of work orders in the Calendar.
+  </p>
+
+  <h3>Show Pricing to Technicians</h3>
+  <p>
+    Control whether technicians can see pricing details on work orders.
+  </p>
+
+  <h2>User Permissions</h2>
+  <ul>
+    <li>When a user is created, they receive an email with their login credentials</li>
+    <li><strong>Administrators</strong> have full access to all features</li>
+    <li><strong>Service Providers</strong> only see work orders assigned to them</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <div class="callout callout-tip">
+    <p>
+      <strong>Set default pay rates</strong> to ensure accurate labor calculations in your invoices.
+    </p>
+    <p>
+      <strong>Hide pricing from technicians</strong> if you don't want them to see pricing details —
+      check the appropriate box in user settings.
+    </p>
+  </div>
+</DocsLayout>

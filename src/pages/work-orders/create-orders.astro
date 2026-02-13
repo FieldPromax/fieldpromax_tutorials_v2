@@ -1,0 +1,97 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout title="Creating Work Orders" section="Work Orders">
+  <h2>Overview</h2>
+  <p>
+    Work orders are the foundation of Field Promax. They ensure every job is tracked,
+    managed, and completed efficiently. This guide covers everything you need to know
+    about creating and managing work orders.
+  </p>
+  <p>
+    A well-structured work order captures all essential details — customer information,
+    job requirements, scheduling, and billing — keeping your team aligned from start to finish.
+  </p>
+
+  <h2>How to Access</h2>
+  <ul>
+    <li>Click the <strong>Create Order</strong> button in the left panel menu</li>
+    <li>Or double-click anywhere on the <strong>Calendar</strong> to create a work order</li>
+  </ul>
+
+  <h2>Creating a Work Order</h2>
+
+  <h3>Step 1: Details Tab</h3>
+  <img src="/images/work-orders/createorders_01.webp" alt="Work Order Details Tab" />
+  <p>Enter the core information for your work order:</p>
+  <ul>
+    <li><strong>Customer:</strong> Start typing to search and select from your synced customer list</li>
+    <li><strong>Job Type:</strong> Select a category (e.g., "Inspection," "Repair")</li>
+    <li><strong>Description:</strong> Provide a detailed job description</li>
+    <li><strong>Secondary Status:</strong> Track progress (e.g., "Waiting on Parts," "Customer Not Available")</li>
+  </ul>
+
+  <h3>Step 2: Schedules Tab</h3>
+  <img src="/images/work-orders/createorders_02.webp" alt="Work Order Schedules Tab" />
+  <p>A <strong>Schedule</strong> (also called a Visit) represents a single appointment within a work order:</p>
+  <ul>
+    <li><strong>Assign a Technician:</strong> Select from your service providers</li>
+    <li><strong>Set Date and Time:</strong> Choose when the work will be performed</li>
+    <li><strong>Duration:</strong> Set the expected job length</li>
+    <li><strong>Multiple Visits:</strong> Add additional schedules if the job requires multiple days</li>
+  </ul>
+
+  <h3>Step 3: Invoice Tab</h3>
+  <img src="/images/work-orders/createorders_03.webp" alt="Work Order Invoice Tab" />
+  <p>Add products and services that will be billed to the customer:</p>
+  <ul>
+    <li><strong>Products/Items:</strong> Add labor, materials, or other line items</li>
+    <li><strong>Pricing:</strong> Adjust quantities and pricing as needed</li>
+    <li><strong>Invoice Preview:</strong> Review totals before finalizing</li>
+  </ul>
+
+  <h3>Step 4: Additional Tabs</h3>
+  <img src="/images/work-orders/createorders_04.webp" alt="Work Order Additional Tabs" />
+  <p>Access more features at the bottom of the work order:</p>
+  <ul>
+    <li><strong>Images:</strong> Upload before/after photos</li>
+    <li><strong>Documents:</strong> Attach relevant files</li>
+    <li><strong>Checklist:</strong> Add task lists for quality control</li>
+    <li><strong>Equipment:</strong> Track equipment serviced</li>
+    <li><strong>Job Costing:</strong> View profitability analysis</li>
+    <li><strong>Payments:</strong> Record payments received</li>
+  </ul>
+
+  <h2>Work Order Actions</h2>
+  <img src="/images/work-orders/createorders_05.webp" alt="Work Order Actions Menu" />
+  <p>Use the <strong>Actions</strong> button to:</p>
+  <ul>
+    <li><strong>Send to QuickBooks:</strong> Close the work order and generate an invoice in QuickBooks</li>
+    <li><strong>Close Only:</strong> Close without generating an invoice</li>
+    <li><strong>PDF as Invoice:</strong> Download as a PDF invoice</li>
+    <li><strong>PDF as Work Order:</strong> Download without pricing</li>
+    <li><strong>Copy Work Order:</strong> Duplicate for similar jobs</li>
+    <li><strong>Delete:</strong> Remove the work order</li>
+  </ul>
+
+  <h2>Notifications & Permissions</h2>
+  <ul>
+    <li>Technicians receive <strong>text and email notifications</strong> when assigned to a work order</li>
+    <li>Customers receive notifications based on your <strong>Text Message Settings</strong></li>
+    <li>Administrators have full access; Service Providers see only their assigned work orders</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <div class="callout callout-tip">
+    <p>
+      <strong>Use custom fields</strong> to capture information specific to your business needs.
+    </p>
+    <p>
+      <strong>Fill in secondary status</strong> to track jobs that need follow-up or are waiting on parts.
+    </p>
+    <p>
+      <strong>Review job costing</strong> before closing to ensure profitability.
+    </p>
+  </div>
+</DocsLayout>

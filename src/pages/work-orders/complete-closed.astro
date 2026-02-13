@@ -1,0 +1,91 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout title="Complete & Closed Work Orders" section="Work Orders">
+  <h2>Overview</h2>
+  <p>
+    Understanding the difference between <strong>Complete</strong> and <strong>Closed</strong> work orders
+    is essential for managing your workflow. These statuses act as checkpoints, ensuring everyone stays
+    aligned on what's been done and what's left to do.
+  </p>
+  <p>
+    The Complete status marks progress when a technician finishes a task. Once all tasks are completed,
+    the work order can be Closed — either manually or automatically when sent to QuickBooks.
+  </p>
+
+  <h2>Complete vs. Closed</h2>
+
+  <h3>Complete Work Orders</h3>
+  <img src="/images/work-orders/completeandclosed_01.webp" alt="Complete Work Order" />
+  <img src="/images/work-orders/completeandclosed_02.webp" alt="Complete Work Order Calendar" />
+  <ul>
+    <li>When a technician finishes a schedule (visit), they mark it as <strong>Complete</strong></li>
+    <li>In the Calendar view, completed work orders show a <strong>green checkbox</strong> in the top right corner</li>
+    <li>The work order remains open for invoicing and additional schedules if needed</li>
+  </ul>
+
+  <h3>Closed Work Orders</h3>
+  <img src="/images/work-orders/completeandclosed_03.webp" alt="Closed Work Order" />
+  <img src="/images/work-orders/completeandclosed_04.webp" alt="Closed Work Order Calendar" />
+  <ul>
+    <li>When all schedules are marked complete, the work order is ready to be closed</li>
+    <li>Close a work order using the <strong>Actions</strong> button with one of two options:
+      <ul>
+        <li><strong>Send to QuickBooks:</strong> Closes the work order and generates an invoice in QuickBooks</li>
+        <li><strong>Close Only:</strong> Closes the work order without generating an invoice</li>
+      </ul>
+    </li>
+    <li>In the Calendar view, closed work orders appear with a <strong>strikethrough</strong></li>
+  </ul>
+
+  <h2>Visual Reference</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Status</th>
+        <th>Calendar Indicator</th>
+        <th>Meaning</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Complete</td>
+        <td>Green checkbox</td>
+        <td>Visit finished, ready for review</td>
+      </tr>
+      <tr>
+        <td>Closed</td>
+        <td>Strikethrough</td>
+        <td>Fully finished and invoiced</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Workflow</h2>
+  <ol>
+    <li>Technician completes the visit and marks it as <strong>Complete</strong> in the mobile app</li>
+    <li>Administrator reviews the completed schedule</li>
+    <li>Once all visits are complete, administrator closes the work order</li>
+    <li>Invoice is generated (if using QuickBooks integration)</li>
+  </ol>
+
+  <h2>Notifications & Permissions</h2>
+  <ul>
+    <li>Administrators review completed schedules and close work orders when all visits are done</li>
+    <li>Email notifications can be configured for work order completions</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <div class="callout callout-tip">
+    <p>
+      <strong>Use the Calendar view</strong> to quickly identify work orders by their status indicators.
+    </p>
+    <p>
+      <strong>Ensure all schedules are complete</strong> before closing a work order.
+    </p>
+    <p>
+      <strong>Use Send to QuickBooks</strong> to automate invoicing when closing work orders.
+    </p>
+  </div>
+</DocsLayout>

@@ -1,0 +1,77 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout title="Recurrent Work Orders" section="Work Orders">
+  <h2>Overview</h2>
+  <p>
+    Recurrent work orders automate the creation of jobs that repeat on a regular schedule.
+    Perfect for maintenance contracts, inspections, or any service performed at regular intervals.
+  </p>
+  <p>
+    Once you define the recurrence pattern, work orders are automatically generated at the right time.
+    The assigned technician is notified, and everything is scheduled without extra effort — providing
+    a reliable source of consistent revenue.
+  </p>
+
+  <h2>How to Access</h2>
+  <ul>
+    <li>From the left panel, select <strong>Work Orders</strong> → <strong>Recurrent</strong></li>
+    <li>Click the <strong>Actions</strong> button to create a new recurrent work order</li>
+  </ul>
+  <img src="/images/work-orders/recurrent_01.webp" alt="Recurrent Work Orders List" />
+
+  <h2>Setting Up a Recurrent Work Order</h2>
+
+  <h3>Step 1: Define the Recurrence Pattern</h3>
+  <img src="/images/work-orders/recurrent_02.jpg" alt="Recurrence Pattern Settings" />
+  <ol>
+    <li>Click on the <strong>Schedule</strong> tab</li>
+    <li>Set the recurrence pattern: <strong>Weekly</strong>, <strong>Monthly</strong>, or <strong>Yearly</strong></li>
+    <li>Define the <strong>end date</strong> for the recurrence</li>
+  </ol>
+
+  <h3>Step 2: Assign Technician and Time</h3>
+  <ul>
+    <li>Select a <strong>Technician</strong> to handle the recurring job</li>
+    <li>Set the preferred <strong>time</strong> for the work order</li>
+  </ul>
+
+  <h3>Step 3: Configure Auto-Generation</h3>
+  <img src="/images/work-orders/recurrent_03.jpg" alt="Auto-Generation Settings" />
+  <p>Define how many <strong>days in advance</strong> the work order should be created:</p>
+  <ul>
+    <li>Example: If the recurrence is set for February 10th every year with 7 days advance notice,
+        the work order will be generated on February 3rd</li>
+    <li>The generated work order appears on the main calendar for scheduling</li>
+  </ul>
+
+  <h2>Managing Recurrent Work Orders</h2>
+  <ul>
+    <li><strong>View all recurrences:</strong> See the complete list in the Recurrent section</li>
+    <li><strong>Edit patterns:</strong> Modify frequency, technician, or timing as needed</li>
+    <li><strong>View generated orders:</strong> Check the Generated Orders tab to see created work orders</li>
+    <li><strong>Attach equipment:</strong> Link equipment to track maintenance history</li>
+    <li><strong>Add products:</strong> Pre-define products for automatic invoicing</li>
+  </ul>
+
+  <h2>Notifications & Permissions</h2>
+  <ul>
+    <li>Work orders are automatically placed in the <strong>main calendar</strong> on the scheduled date</li>
+    <li>Generated recurrent work orders appear in the <strong>Dashboard</strong> under the Recurrence tile</li>
+    <li>Technicians receive notifications when new work orders are generated</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <div class="callout callout-tip">
+    <p>
+      <strong>Use the Reports module</strong> to view recurrence definitions, future orders, and generated orders.
+    </p>
+    <p>
+      <strong>Attach equipment</strong> to recurrent orders to maintain service history.
+    </p>
+    <p>
+      <strong>Check the Recurrence tile</strong> in the Dashboard to see all generated recurrence orders.
+    </p>
+  </div>
+</DocsLayout>
